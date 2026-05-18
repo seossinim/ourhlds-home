@@ -33,6 +33,12 @@ export const metadata: Metadata = {
   authors: [{ name: "서은호" }],
   creator: "아우어에이치엘디에스",
 
+  verification: {
+    other: {
+      "naver-site-verification": "c51aefcf64cd122b5be9d4958db6681a9c1eb162",
+    },
+  },
+
   openGraph: {
     title: "아우어에이치엘디에스 | OUR H.L.D.S",
     description:
@@ -77,9 +83,7 @@ export default function RootLayout({
       lang="ko"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
-        {children}
-      </body>
+      <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
 }
