@@ -42,7 +42,7 @@ export default function PRPage() {
       title: "GIF 2024 글로벌 이노베이터 페스타 초청 강연",
       desc: "OUR H.L.D.S 서은호 대표가 스타트업 강연 연사로 초청되어 1인 가구 플랫폼과 창업 경험을 공유했습니다.",
       links: [
-        ["고시위크", "https://www.gosiweek.com/article/1065602517139893"],
+        ["피앤피뉴스", "https://www.gosiweek.com/article/1065602517139893"],
         ["경상일보", "https://www.ksilbo.co.kr/news/articleView.html?idxno=1012142"],
       ],
     },
