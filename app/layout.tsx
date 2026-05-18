@@ -34,6 +34,7 @@ export const metadata: Metadata = {
   creator: "아우어에이치엘디에스",
 
   verification: {
+    google: "cV8cwZ69vH8yYGYq3QsSVHEPLrkFrf1_Bi4AAb8CuDU",
     other: {
       "naver-site-verification": "c51aefcf64cd122b5be9d4958db6681a9c1eb162",
     },
