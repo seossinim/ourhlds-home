@@ -34,7 +34,7 @@ export default function IRPage() {
     ["01", "1인 가구 시장", "소비·콘텐츠·생활·커뮤니티·광고 흐름이 연결되는 시장 변화에 집중합니다."],
     ["02", "브랜드 포트폴리오", "1OUR, 홀로알다, OUR SIGNAL을 하나의 생활형 플랫폼 생태계로 연결합니다."],
     ["03", "콘텐츠 기반 실행력", "대표의 크리에이터 경험과 실제 서비스 운영 경험을 바탕으로 빠르게 실행합니다."],
-    ["04", "Pre-seed Target", "브랜드 확장, 콘텐츠 강화, 사용자 기반 확대, 신규 서비스 준비를 위한 성장 자금을 계획합니다."],
+    ["04", "Pre-Series A Target", "브랜드 확장, 콘텐츠 강화, 사용자 기반 확대, 신규 서비스 준비를 위한 성장 자금을 계획합니다."],
   ];
 
   const downloadItems = [
@@ -49,6 +49,21 @@ export default function IRPage() {
       desc: "OUR H.L.D.S 온라인 IR 영상 / YouTube",
       href: youtubeUrl,
       label: "영상 바로가기",
+    },
+  ];
+
+  const pressArticles = [
+    {
+      media: "한국목재신문",
+      title: "스타트업 아우어에이치엘디에스 서은호 대표, 온라인 공개 IR DECK 진행",
+      desc: "1인 가구 라이프스타일 생태계 구축과 콘텐츠·커뮤니티·커머스·광고 연결 구조를 다룬 IR 관련 보도입니다.",
+      href: "https://www.woodkorea.co.kr/news/articleView.html?idxno=89681",
+    },
+    {
+      media: "세계비즈",
+      title: "아우어에이치엘디에스, 서은호 대표 공개 IR 데크 발표",
+      desc: "콘텐츠 운영, 브랜드 구축, 플랫폼 개발을 병행하는 실행 중심 스타트업 전략을 다룬 보도입니다.",
+      href: "https://www.segyebiz.com/newsView/20260602506976?OutUrl=naver",
     },
   ];
 
@@ -196,7 +211,7 @@ export default function IRPage() {
 
             <p className="mt-6 text-[15px] leading-8 text-black/55">
               IR 자료에는 OUR H.L.D.S의 브랜드 구조, 시장 접근 방식, 수익
-              모델, 플랫폼 확장 전략, Pre-seed 투자 계획이 포함되어 있습니다.
+              모델, 플랫폼 확장 전략, Pre-Series A 투자 계획이 포함되어 있습니다.
             </p>
 
             <div className="mt-8 grid gap-3">
@@ -252,6 +267,52 @@ export default function IRPage() {
         </div>
       </section>
 
+      <section className="bg-white px-5 pb-24">
+        <div className="mx-auto max-w-7xl rounded-[40px] border border-black/10 bg-[#f7f8f6] p-8 shadow-[0_20px_70px_rgba(0,0,0,0.045)] md:p-12">
+          <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+            <div>
+              <p className="text-[11px] font-bold tracking-[0.28em] text-[#099250]">
+                PRESS COVERAGE
+              </p>
+              <h2 className="mt-5 text-[32px] font-bold leading-tight tracking-[-0.055em] md:text-[48px]">
+                언론에서 소개한
+                <br />
+                OUR H.L.D.S IR
+              </h2>
+            </div>
+            <p className="max-w-xl text-[15px] leading-8 text-black/55">
+              OUR H.L.D.S의 공개 IR 데크 발표와 실행 중심 성장 전략이 주요
+              언론 보도를 통해 소개되었습니다.
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-4 lg:grid-cols-2">
+            {pressArticles.map((article) => (
+              <a
+                key={article.href}
+                href={article.href}
+                target="_blank"
+                rel="noreferrer"
+                className="group rounded-[30px] border border-black/10 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[#12b76a]/50"
+              >
+                <p className="text-[11px] font-bold tracking-[0.24em] text-[#099250]">
+                  {article.media}
+                </p>
+                <h3 className="mt-5 text-[22px] font-bold leading-8 tracking-[-0.045em] text-black">
+                  {article.title}
+                </h3>
+                <p className="mt-4 text-[14px] leading-7 text-black/50">
+                  {article.desc}
+                </p>
+                <span className="mt-6 inline-flex rounded-full bg-[#f7f8f6] px-4 py-2 text-[12px] font-bold text-black/60 transition group-hover:bg-[#12b76a] group-hover:text-white">
+                  기사 보기
+                </span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-[#111] px-5 py-24 text-white">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr]">
@@ -299,7 +360,7 @@ export default function IRPage() {
           <div className="mt-5 grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
             <div>
               <h2 className="text-[34px] font-bold leading-tight tracking-[-0.055em] md:text-[52px]">
-                Pre-seed Target Funding
+                Pre-Series A Target Funding
                 <br />
                 ₩500,000,000
               </h2>

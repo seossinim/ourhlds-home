@@ -15,7 +15,19 @@ export default function PRPage() {
     { name: "IR", href: "/ir" },
   ];
 
+  const ourSignalPrVideoId = "loAyb63l1iw";
+  const ourSignalPrVideoUrl = `https://www.youtube.com/watch?v=${ourSignalPrVideoId}&t=40s`;
+
   const featured = [
+    {
+      category: "SERVICE PR",
+      date: "2026.06",
+      title: "OUR SIGNAL 서비스 PR 영상 공개",
+      desc: "온라인 광고·마케팅 플랫폼 OUR SIGNAL의 서비스 구조와 활용 방향을 소개하는 공식 PR 영상을 공개했습니다.",
+      links: [
+        ["YouTube", ourSignalPrVideoUrl],
+      ],
+    },
     {
       category: "AI SERVICE",
       date: "2026.04",
@@ -49,6 +61,22 @@ export default function PRPage() {
   ];
 
   const pressList = [
+    {
+      category: "IR",
+      date: "2026.06",
+      title: "아우어에이치엘디에스, 서은호 대표 공개 IR 데크 발표",
+      desc: "서은호 대표가 공개 IR 데크 발표를 통해 실행 중심 스타트업 운영 전략과 프리시리즈 A 투자 유치 방향을 소개했습니다.",
+      media: "세계비즈",
+      url: "https://www.segyebiz.com/newsView/20260602506976?OutUrl=naver",
+    },
+    {
+      category: "IR",
+      date: "2026.06",
+      title: "스타트업 아우어에이치엘디에스 서은호 대표, 온라인 공개 IR DECK 진행",
+      desc: "1인 가구 라이프스타일 생태계 구축을 위한 콘텐츠·커뮤니티·커머스·광고 연결 구조와 성장 전략을 공개했습니다.",
+      media: "한국목재신문",
+      url: "https://www.woodkorea.co.kr/news/articleView.html?idxno=89681",
+    },
     {
       category: "COMPANY",
       date: "2024.07",
@@ -201,6 +229,48 @@ export default function PRPage() {
             언론 보도, 강연, 브랜드 런칭, 콘텐츠 활동을 통해 1인 가구
             라이프스타일 스타트업으로서의 흐름을 만들어가고 있습니다.
           </p>
+        </div>
+      </section>
+
+      <section className="px-5 pb-24">
+        <div className="mx-auto grid max-w-7xl items-center gap-8 lg:grid-cols-[0.92fr_1.08fr]">
+          <div>
+            <p className="text-[11px] font-bold tracking-[0.28em] text-[#099250]">
+              SERVICE PR VIDEO
+            </p>
+
+            <h2 className="mt-5 text-[32px] font-bold leading-tight tracking-[-0.055em] md:text-[48px]">
+              OUR SIGNAL
+              <br />
+              서비스 PR.
+            </h2>
+
+            <p className="mt-6 text-[15px] leading-8 text-black/55">
+              온라인 광고·마케팅 플랫폼 OUR SIGNAL의 서비스 방향과 활용
+              구조를 소개하는 공식 PR 영상입니다.
+            </p>
+
+            <a
+              href={ourSignalPrVideoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-flex rounded-full bg-[#111] px-6 py-4 text-[14px] font-bold text-white transition hover:bg-[#12b76a]"
+            >
+              PR 영상 바로가기
+            </a>
+          </div>
+
+          <div className="rounded-[34px] border border-black/10 bg-white p-3 shadow-[0_24px_90px_rgba(0,0,0,0.08)]">
+            <div className="aspect-video overflow-hidden rounded-[26px] bg-black">
+              <iframe
+                className="h-full w-full"
+                src={`https://www.youtube.com/embed/${ourSignalPrVideoId}?start=40`}
+                title="OUR SIGNAL Service PR Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
+          </div>
         </div>
       </section>
 
