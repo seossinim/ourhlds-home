@@ -40,10 +40,12 @@ export default function BusinessPage() {
       name: "홀로알다",
       type: "Community Platform",
       title: "혼자 사는 사람들의 이야기가 모이는 커뮤니티",
-      desc: "1인 가구가 겪는 외로움, 생활 고민, 감정, 정보들을 익명으로 나눌 수 있는 커뮤니티 플랫폼입니다.",
+      desc: "1인 가구가 겪는 외로움, 생활 고민, 감정, 정보들을 익명으로 나눌 수 있는 커뮤니티 플랫폼입니다. AI 캐릭터 '으니·예니'의 음성 서비스를 통해 텍스트를 넘어 음성으로 교감하는 경험까지 확장하고 있습니다.",
       points: [
         "익명 커뮤니티",
         "AI 감정 피드백",
+        "으니·예니 AI 음성(TTS)",
+        "뉴스·기후 생활 위젯",
         "생활 정보 공유",
         "1인 가구 데이터 기반",
       ],
@@ -344,7 +346,10 @@ export default function BusinessPage() {
           <div className="grid gap-4 sm:grid-cols-2">
             {[
               ["Commerce Operation", "스마트스토어와 브랜드 상품 운영"],
-              ["Community Building", "1인 가구 커뮤니티와 감정 기반 서비스"],
+              [
+                "Community Building",
+                "1인 가구 커뮤니티와 AI 기반 감정·음성 서비스",
+              ],
               ["Content IP", "대표 IP와 브랜드 콘텐츠 제작"],
               ["Marketing Platform", "소상공인·초기 브랜드 광고 플랫폼"],
             ].map(([title, desc]) => (
@@ -387,7 +392,7 @@ export default function BusinessPage() {
                 <p>사업자 등록 번호 : 697-36-01404</p>
                 <p>통신판매업 신고번호 : 제 2024-광주동구-0363호</p>
                 <p>
-                  사업장 소재지 : 광주광역시 동구 백서로 125번길 34-2, 5층
+                  사업장 소재지 : 전남광주통합특별시 동구 백서로125번길 34-2 5층
                   아이27호
                 </p>
                 <p>물류 창고 소재지 : 계약 예정</p>

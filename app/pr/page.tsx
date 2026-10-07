@@ -20,13 +20,43 @@ export default function PRPage() {
 
   const featured = [
     {
+      category: "STARTUP",
+      date: "2026.09",
+      title: "코리아스타트업포럼 10주년 제주 행사 참여",
+      desc: "코리아스타트업포럼 10주년 제주 행사에 참여해 스타트업·IT·미디어 관계자들과 교류하고, 청년 1인 가구를 위한 서비스 생태계와 장기 사업 비전을 공유했습니다.",
+      links: [
+        [
+          "경상일보",
+          "https://www.ksilbo.co.kr/news/articleView.html?idxno=1068152",
+        ],
+        [
+          "피앤피뉴스",
+          "https://www.gosiweek.com/article/1065573775115606",
+        ],
+      ],
+    },
+    {
+      category: "AI SERVICE",
+      date: "2026.08",
+      title: "홀로알다 AI 캐릭터 ‘으니·예니’ 음성 서비스 베타 공개",
+      desc: "홀로알다 AI 캐릭터 ‘으니·예니’에 STT·TTS 기반 음성 대화 기능을 적용해 텍스트 중심의 AI 대화를 음성 상호작용으로 확장했습니다.",
+      links: [
+        [
+          "데일리경제",
+          "https://www.kdpress.co.kr/news/articleView.html?idxno=207559",
+        ],
+        [
+          "피앤피뉴스",
+          "https://www.gosiweek.com/article/1065574909826630",
+        ],
+      ],
+    },
+    {
       category: "SERVICE PR",
       date: "2026.06",
       title: "OUR SIGNAL 서비스 PR 영상 공개",
       desc: "온라인 광고·마케팅 플랫폼 OUR SIGNAL의 서비스 구조와 활용 방향을 소개하는 공식 PR 영상을 공개했습니다.",
-      links: [
-        ["YouTube", ourSignalPrVideoUrl],
-      ],
+      links: [["YouTube", ourSignalPrVideoUrl]],
     },
     {
       category: "AI SERVICE",
@@ -34,8 +64,14 @@ export default function PRPage() {
       title: "홀로알다 AI 감정피드백 기능 개발 및 실적용",
       desc: "1인 가구 커뮤니티 홀로알다에 AI 기반 감정 피드백 기능을 적용하며 서비스 고도화를 진행했습니다.",
       links: [
-        ["시민일보", "https://www.siminilbo.co.kr/news/newsview.php?ncode=1160281124101629"],
-        ["하이뉴스", "https://www.hinews.co.kr/view.php?ud=202604151643048889dacadeb388_48"],
+        [
+          "시민일보",
+          "https://www.siminilbo.co.kr/news/newsview.php?ncode=1160281124101629",
+        ],
+        [
+          "하이뉴스",
+          "https://www.hinews.co.kr/view.php?ud=202604151643048889dacadeb388_48",
+        ],
       ],
     },
     {
@@ -44,8 +80,14 @@ export default function PRPage() {
       title: "온라인 광고 브랜드 OUR SIGNAL 론칭",
       desc: "소상공인과 초기 브랜드를 위한 온라인 광고·마케팅 플랫폼 브랜드 OUR SIGNAL을 선보였습니다.",
       links: [
-        ["경상일보", "https://www.ksilbo.co.kr/news/articleView.html?idxno=1035679"],
-        ["하이뉴스", "https://www.hinews.co.kr/view.php?ud=202509011535381850b28ba9f00a_48"],
+        [
+          "경상일보",
+          "https://www.ksilbo.co.kr/news/articleView.html?idxno=1035679",
+        ],
+        [
+          "하이뉴스",
+          "https://www.hinews.co.kr/view.php?ud=202509011535381850b28ba9f00a_48",
+        ],
       ],
     },
     {
@@ -54,13 +96,55 @@ export default function PRPage() {
       title: "GIF 2024 글로벌 이노베이터 페스타 초청 강연",
       desc: "OUR H.L.D.S 서은호 대표가 스타트업 강연 연사로 초청되어 1인 가구 플랫폼과 창업 경험을 공유했습니다.",
       links: [
-        ["피앤피뉴스", "https://www.gosiweek.com/article/1065602517139893"],
-        ["경상일보", "https://www.ksilbo.co.kr/news/articleView.html?idxno=1012142"],
+        [
+          "피앤피뉴스",
+          "https://www.gosiweek.com/article/1065602517139893",
+        ],
+        [
+          "경상일보",
+          "https://www.ksilbo.co.kr/news/articleView.html?idxno=1012142",
+        ],
       ],
     },
   ];
 
   const pressList = [
+    {
+      category: "STARTUP",
+      date: "2026.09",
+      title:
+        "아우어에이치엘디에스, 코스포 10주년 제주 소셜임팩트 캠페인 참여",
+      desc: "코리아스타트업포럼 10주년을 맞아 제주에서 진행된 소셜임팩트 캠페인에 참여해 지역사회와 함께하는 활동을 진행했습니다.",
+      media: "경상일보",
+      url: "https://www.ksilbo.co.kr/news/articleView.html?idxno=1068152",
+    },
+    {
+      category: "STARTUP",
+      date: "2026.09",
+      title:
+        "아우어에이치엘디에스, 코스포 10주년 제주 행사 참여…1인 가구 생태계 비전 공유",
+      desc: "코리아스타트업포럼 10주년 제주 행사에서 스타트업·IT·미디어 관계자들과 교류하고 청년 1인 가구 서비스 생태계와 장기 사업 비전을 공유했습니다.",
+      media: "피앤피뉴스",
+      url: "https://www.gosiweek.com/article/1065573775115606",
+    },
+    {
+      category: "AI SERVICE",
+      date: "2026.08",
+      title:
+        "아우어에이치엘디에스, 홀로알다 AI 캐릭터 음성 대화 베타 기능 도입",
+      desc: "홀로알다에 AI 캐릭터 음성 대화 기능을 베타 버전으로 도입하며 텍스트 중심의 AI 대화를 음성 상호작용으로 확장했습니다.",
+      media: "데일리경제",
+      url: "https://www.kdpress.co.kr/news/articleView.html?idxno=207559",
+    },
+    {
+      category: "AI SERVICE",
+      date: "2026.08",
+      title:
+        "스타트업 아우어에이치엘디에스, 홀로알다 AI 캐릭터 ‘으니·예니’ 음성 서비스 베타 공개",
+      desc: "AI 캐릭터 으니·예니에 음성 인식(STT)과 음성 합성(TTS)을 적용하고 캐릭터별 성격과 음성을 살린 음성 서비스를 공개했습니다.",
+      media: "피앤피뉴스",
+      url: "https://www.gosiweek.com/article/1065574909826630",
+    },
     {
       category: "IR",
       date: "2026.06",
@@ -72,66 +156,19 @@ export default function PRPage() {
     {
       category: "IR",
       date: "2026.06",
-      title: "스타트업 아우어에이치엘디에스 서은호 대표, 온라인 공개 IR DECK 진행",
+      title:
+        "스타트업 아우어에이치엘디에스 서은호 대표, 온라인 공개 IR DECK 진행",
       desc: "1인 가구 라이프스타일 생태계 구축을 위한 콘텐츠·커뮤니티·커머스·광고 연결 구조와 성장 전략을 공개했습니다.",
       media: "한국목재신문",
       url: "https://www.woodkorea.co.kr/news/articleView.html?idxno=89681",
     },
     {
-      category: "COMPANY",
-      date: "2024.07",
-      title: "OUR H.L.D.S 기업 설립",
-      desc: "홀로 비전 2.0 프로젝트를 기반으로 1인 가구 라이프스타일 스타트업 OUR H.L.D.S를 설립했습니다.",
-      media: "경상일보 외",
-      url: "https://www.ksilbo.co.kr/news/articleView.html?idxno=1004696",
-    },
-    {
-      category: "CONFERENCE",
-      date: "2024.07",
-      title: "OUR H.L.D.S 기업 PR 온라인 콘퍼런스 개최",
-      desc: "회사 비전과 브랜드 방향성을 소개하는 온라인 PR 콘퍼런스를 진행했습니다.",
-      media: "내외경제TV 외",
-      url: "https://www.nbntv.co.kr/news/articleView.html?idxno=3022155",
-    },
-    {
-      category: "COMMERCE",
-      date: "2024.08",
-      title: "1OUR 1인 가구 이커머스 브랜드 정식 런칭",
-      desc: "1인 가구 생활에 필요한 제품을 큐레이션하는 라이프스타일 커머스 브랜드 1OUR를 정식 런칭했습니다.",
-      media: "경상일보 외",
-      url: "https://www.ksilbo.co.kr/news/articleView.html?idxno=1006922",
-    },
-    {
-      category: "MEDIA",
-      date: "2025.05",
-      title: "위클리 NEWS PICK 신규 콘텐츠 론칭 예고",
-      desc: "대표 콘텐츠 IP 확장을 위해 뉴스 큐레이션 기반 콘텐츠 ‘위클리 NEWS PICK’을 선보였습니다.",
-      media: "내외경제TV 외",
-      url: "https://www.nbntv.co.kr/news/articleView.html?idxno=4000670",
-    },
-    {
-      category: "MEDIA",
-      date: "2025.06",
-      title: "위클리 NEWS PICK 신규 콘텐츠 론칭 성료",
-      desc: "신규 콘텐츠 론칭 이후 브랜드 콘텐츠 운영과 미디어 확장 가능성을 보여주었습니다.",
-      media: "경상일보 외",
-      url: "https://www.ksilbo.co.kr/news/articleView.html?idxno=1028833",
-    },
-    {
-      category: "STARTUP",
-      date: "2025.11",
-      title: "코리아 스타트업 포럼 2025 세종 창업 한마당 워크샵 참석",
-      desc: "스타트업 생태계 네트워크와 연결하며 사업 확장 기반을 다졌습니다.",
-      media: "경상일보 외",
-      url: "https://www.ksilbo.co.kr/news/articleView.html?idxno=1041212",
-    },
-    {
-      category: "BOOK",
-      date: "2025.12",
-      title: "도서 『그대는 찬란하고 예쁘잖아』 정식 출간",
-      desc: "대표의 콘텐츠 창작 경험과 감성 브랜딩을 기반으로 한 힐링 에세이를 출간했습니다.",
-      media: "내외경제TV 외",
-      url: "https://www.nbntv.co.kr/news/articleView.html?idxno=4015095",
+      category: "PARTNERSHIP",
+      date: "2026.04",
+      title: "스퀘어스 스타트업 지원 프로그램 선정 및 마케팅 협력",
+      desc: "스타트업 지원 프로그램에 선정되어 서비스 고도화와 마케팅 협력 기반을 마련했습니다.",
+      media: "공식 블로그",
+      url: "https://blog.naver.com/ourhldscompany/224245851891",
     },
     {
       category: "CREATOR",
@@ -142,12 +179,76 @@ export default function PRPage() {
       url: "https://www.nbntv.co.kr/news/articleView.html?idxno=4018624",
     },
     {
-      category: "PARTNERSHIP",
-      date: "2026.04",
-      title: "스퀘어스 스타트업 지원 프로그램 선정 및 마케팅 협력",
-      desc: "스타트업 지원 프로그램에 선정되어 서비스 고도화와 마케팅 협력 기반을 마련했습니다.",
-      media: "공식 블로그",
-      url: "https://blog.naver.com/ourhldscompany/224245851891",
+      category: "BOOK",
+      date: "2025.12",
+      title: "도서 『그대는 찬란하고 예쁘잖아』 정식 출간",
+      desc: "대표의 콘텐츠 창작 경험과 감성 브랜딩을 기반으로 한 힐링 에세이를 출간했습니다.",
+      media: "내외경제TV 외",
+      url: "https://www.nbntv.co.kr/news/articleView.html?idxno=4015095",
+    },
+    {
+      category: "STARTUP",
+      date: "2025.11",
+      title: "코리아 스타트업 포럼 2025 세종 창업 한마당 워크샵 참석",
+      desc: "스타트업 생태계 네트워크와 연결하며 사업 확장 기반을 다졌습니다.",
+      media: "경상일보 외",
+      url: "https://www.ksilbo.co.kr/news/articleView.html?idxno=1041212",
+    },
+    {
+      category: "BRAND LAUNCH",
+      date: "2025.09",
+      title: "온라인 광고 브랜드 OUR SIGNAL 론칭",
+      desc: "소상공인과 초기 브랜드를 위한 온라인 광고·마케팅 플랫폼 브랜드 OUR SIGNAL을 선보였습니다.",
+      media: "경상일보 외",
+      url: "https://www.ksilbo.co.kr/news/articleView.html?idxno=1035679",
+    },
+    {
+      category: "MEDIA",
+      date: "2025.06",
+      title: "위클리 NEWS PICK 신규 콘텐츠 론칭 성료",
+      desc: "신규 콘텐츠 론칭 이후 브랜드 콘텐츠 운영과 미디어 확장 가능성을 보여주었습니다.",
+      media: "경상일보 외",
+      url: "https://www.ksilbo.co.kr/news/articleView.html?idxno=1028833",
+    },
+    {
+      category: "MEDIA",
+      date: "2025.05",
+      title: "위클리 NEWS PICK 신규 콘텐츠 론칭 예고",
+      desc: "대표 콘텐츠 IP 확장을 위해 뉴스 큐레이션 기반 콘텐츠 ‘위클리 NEWS PICK’을 선보였습니다.",
+      media: "내외경제TV 외",
+      url: "https://www.nbntv.co.kr/news/articleView.html?idxno=4000670",
+    },
+    {
+      category: "LECTURE",
+      date: "2024.10",
+      title: "GIF 2024 글로벌 이노베이터 페스타 초청 강연",
+      desc: "OUR H.L.D.S 서은호 대표가 스타트업 강연 연사로 초청되어 1인 가구 플랫폼과 창업 경험을 공유했습니다.",
+      media: "피앤피뉴스 외",
+      url: "https://www.gosiweek.com/article/1065602517139893",
+    },
+    {
+      category: "COMMERCE",
+      date: "2024.08",
+      title: "1OUR 1인 가구 이커머스 브랜드 정식 런칭",
+      desc: "1인 가구 생활에 필요한 제품을 큐레이션하는 라이프스타일 커머스 브랜드 1OUR를 정식 런칭했습니다.",
+      media: "경상일보 외",
+      url: "https://www.ksilbo.co.kr/news/articleView.html?idxno=1006922",
+    },
+    {
+      category: "CONFERENCE",
+      date: "2024.07",
+      title: "OUR H.L.D.S 기업 PR 온라인 콘퍼런스 개최",
+      desc: "회사 비전과 브랜드 방향성을 소개하는 온라인 PR 콘퍼런스를 진행했습니다.",
+      media: "내외경제TV 외",
+      url: "https://www.nbntv.co.kr/news/articleView.html?idxno=3022155",
+    },
+    {
+      category: "COMPANY",
+      date: "2024.07",
+      title: "OUR H.L.D.S 기업 설립",
+      desc: "홀로 비전 2.0 프로젝트를 기반으로 1인 가구 라이프스타일 스타트업 OUR H.L.D.S를 설립했습니다.",
+      media: "경상일보 외",
+      url: "https://www.ksilbo.co.kr/news/articleView.html?idxno=1004696",
     },
   ];
 
@@ -155,13 +256,21 @@ export default function PRPage() {
     <main className="min-h-screen bg-[#f7f8f6] text-[#111]">
       <header className="fixed left-0 top-0 z-50 w-full border-b border-black/10 bg-white/80 backdrop-blur-xl">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5">
-          <a href="/" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-3">
+          <a
+            href="/"
+            onClick={() => setMobileMenuOpen(false)}
+            className="flex items-center gap-3"
+          >
             <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#111] text-[11px] font-bold text-white">
               OUR
             </div>
             <div>
-              <p className="text-[13px] font-bold tracking-[0.24em]">OUR H.L.D.S</p>
-              <p className="text-[11px] text-black/45">One-person lifestyle startup</p>
+              <p className="text-[13px] font-bold tracking-[0.24em]">
+                OUR H.L.D.S
+              </p>
+              <p className="text-[11px] text-black/45">
+                One-person lifestyle startup
+              </p>
             </div>
           </a>
 
@@ -174,7 +283,10 @@ export default function PRPage() {
           </nav>
 
           <div className="flex items-center gap-3">
-            <a href="/contact" className="hidden rounded-full bg-[#111] px-5 py-2.5 text-[13px] font-semibold text-white transition hover:bg-[#12b76a] sm:inline-flex">
+            <a
+              href="/contact"
+              className="hidden rounded-full bg-[#111] px-5 py-2.5 text-[13px] font-semibold text-white transition hover:bg-[#12b76a] sm:inline-flex"
+            >
               Contact
             </a>
 
@@ -202,7 +314,11 @@ export default function PRPage() {
                 </a>
               ))}
 
-              <a href="/contact" onClick={() => setMobileMenuOpen(false)} className="mt-4 rounded-2xl bg-[#111] px-5 py-4 text-center text-[14px] font-bold text-white">
+              <a
+                href="/contact"
+                onClick={() => setMobileMenuOpen(false)}
+                className="mt-4 rounded-2xl bg-[#111] px-5 py-4 text-center text-[14px] font-bold text-white"
+              >
                 Contact
               </a>
             </nav>
@@ -290,7 +406,9 @@ export default function PRPage() {
                   <p className="rounded-full bg-[#e9fbf1] px-4 py-2 text-[11px] font-bold tracking-[0.18em] text-[#099250]">
                     {item.category}
                   </p>
-                  <p className="text-[13px] font-bold text-black/35">{item.date}</p>
+                  <p className="text-[13px] font-bold text-black/35">
+                    {item.date}
+                  </p>
                 </div>
 
                 <h2 className="mt-6 text-[25px] font-bold leading-tight tracking-[-0.05em]">
@@ -343,7 +461,7 @@ export default function PRPage() {
           <div className="grid gap-5">
             {pressList.map((item) => (
               <a
-                key={item.title}
+                key={`${item.media}-${item.title}`}
                 href={item.url}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -353,7 +471,9 @@ export default function PRPage() {
                   <p className="text-[11px] font-bold tracking-[0.2em] text-[#099250]">
                     {item.category}
                   </p>
-                  <p className="mt-3 text-[15px] font-bold text-black/40">{item.date}</p>
+                  <p className="mt-3 text-[15px] font-bold text-black/40">
+                    {item.date}
+                  </p>
                 </div>
 
                 <div>
@@ -366,7 +486,9 @@ export default function PRPage() {
                 </div>
 
                 <div className="flex flex-col justify-between md:items-end">
-                  <p className="text-[13px] font-bold text-black/40">{item.media}</p>
+                  <p className="text-[13px] font-bold text-black/40">
+                    {item.media}
+                  </p>
                   <p className="mt-5 text-[13px] font-bold text-[#099250]">
                     Read More →
                   </p>
@@ -397,12 +519,25 @@ export default function PRPage() {
             {[
               ["Press", "언론 보도를 통해 회사와 서비스의 신뢰도를 쌓습니다."],
               ["Lecture", "강연과 행사 참여로 스타트업 경험을 공유합니다."],
-              ["Brand", "1OUR, 홀로알다, OUR SIGNAL의 브랜드 가치를 확장합니다."],
-              ["Content", "콘텐츠 제작 경험을 기반으로 사람과 시장을 연결합니다."],
+              [
+                "Brand",
+                "1OUR, 홀로알다, OUR SIGNAL의 브랜드 가치를 확장합니다.",
+              ],
+              [
+                "Content",
+                "콘텐츠 제작 경험을 기반으로 사람과 시장을 연결합니다.",
+              ],
             ].map(([title, desc]) => (
-              <div key={title} className="rounded-[26px] border border-white/10 bg-white/[0.05] p-6">
-                <p className="text-[20px] font-bold tracking-[-0.04em]">{title}</p>
-                <p className="mt-4 text-[14px] leading-7 text-white/50">{desc}</p>
+              <div
+                key={title}
+                className="rounded-[26px] border border-white/10 bg-white/[0.05] p-6"
+              >
+                <p className="text-[20px] font-bold tracking-[-0.04em]">
+                  {title}
+                </p>
+                <p className="mt-4 text-[14px] leading-7 text-white/50">
+                  {desc}
+                </p>
               </div>
             ))}
           </div>
@@ -413,8 +548,12 @@ export default function PRPage() {
         <div className="mx-auto max-w-7xl rounded-[32px] border border-black/10 bg-[#f7f8f6] p-7 md:p-10">
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.6fr]">
             <div>
-              <p className="text-[20px] font-bold tracking-[-0.04em]">OUR H.L.D.S</p>
-              <p className="mt-1 text-[13px] text-black/45">아우어 에이치엘디에스</p>
+              <p className="text-[20px] font-bold tracking-[-0.04em]">
+                OUR H.L.D.S
+              </p>
+              <p className="mt-1 text-[13px] text-black/45">
+                아우어 에이치엘디에스
+              </p>
               <p className="mt-5 max-w-sm text-[13px] leading-6 text-black/50">
                 제품 기획 / 유통 / 판매 / 플랫폼 / 온라인 광고 & 마케팅
               </p>
@@ -422,15 +561,22 @@ export default function PRPage() {
 
             <div className="grid gap-5 text-[12px] leading-6 text-black/50 md:grid-cols-2">
               <div>
-                <p className="mb-3 text-[13px] font-bold text-black/80">Company</p>
+                <p className="mb-3 text-[13px] font-bold text-black/80">
+                  Company
+                </p>
                 <p>사업자 등록 번호 : 697-36-01404</p>
                 <p>통신판매업 신고번호 : 제 2024-광주동구-0363호</p>
-                <p>사업장 소재지 : 광주광역시 동구 백서로 125번길 34-2, 5층 아이27호</p>
+                <p>
+                  사업장 소재지 : 전남광주통합특별시 동구 백서로125번길 34-2
+                  5층 아이27호
+                </p>
                 <p>물류 창고 소재지 : 계약 예정</p>
               </div>
 
               <div>
-                <p className="mb-3 text-[13px] font-bold text-black/80">Contact</p>
+                <p className="mb-3 text-[13px] font-bold text-black/80">
+                  Contact
+                </p>
                 <p>비즈니스 문의 : hologadese@naver.com</p>
                 <p>대표번호 : 0507-1350-5806</p>
                 <p>카카오채널 : @ourhlds</p>
@@ -438,15 +584,26 @@ export default function PRPage() {
               </div>
 
               <div className="md:col-span-2">
-                <p className="mb-3 text-[13px] font-bold text-black/80">Account</p>
-                <p>기업 계좌 1 : 카카오뱅크 3333-31-2546318 [아우어에이치엘디에스]</p>
-                <p>기업 계좌 2 : 국민은행 773901-01-613735 [아우어에이치엘디에스]</p>
+                <p className="mb-3 text-[13px] font-bold text-black/80">
+                  Account
+                </p>
+                <p>
+                  기업 계좌 1 : 카카오뱅크 3333-31-2546318
+                  [아우어에이치엘디에스]
+                </p>
+                <p>
+                  기업 계좌 2 : 국민은행 773901-01-613735
+                  [아우어에이치엘디에스]
+                </p>
               </div>
             </div>
           </div>
 
           <div className="mt-8 flex flex-col gap-2 border-t border-black/10 pt-6 text-[11px] text-black/35 md:flex-row md:items-center md:justify-between">
-            <p>Copyright © OUR H.L.D.S(아우어 에이치엘디에스) All Rights Reserved.</p>
+            <p>
+              Copyright © OUR H.L.D.S(아우어 에이치엘디에스) All Rights
+              Reserved.
+            </p>
             <p>One-person lifestyle company based in Gwangju.</p>
           </div>
         </div>

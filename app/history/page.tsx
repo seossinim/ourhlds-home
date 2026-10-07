@@ -21,17 +21,19 @@ export default function HistoryPage() {
     ["2023", "홀로알다 공식 런칭"],
     ["2024", "OUR H.L.D.S 설립"],
     ["2025", "1OUR·OUR SIGNAL 확장"],
-    ["2026", "AI 감정피드백·광고 플랫폼 전환"],
+    ["2026", "AI 서비스·광고 플랫폼·대외 활동 확장"],
   ];
 
   const timeline = [
     {
       year: "2026",
-      title: "AI와 온라인 광고 플랫폼으로 확장",
+      title: "AI 서비스와 온라인 광고 플랫폼으로 확장",
       items: [
+        "코리아스타트업포럼 10주년 제주 행사 참여",
+        "홀로알다 AI 캐릭터 ‘으니·예니’ STT·TTS 음성 서비스 베타 공개",
+        "OUR SIGNAL 온라인 광고 플랫폼 전환 개발 프로젝트 진행",
         "홀로알다 AI 감정피드백 기능 개발 및 실적용",
         "스퀘어스 스타트업 지원 프로그램 선정 및 마케팅 협력",
-        "OUR SIGNAL 온라인 광고 플랫폼 전환 개발 프로젝트 진행",
         "신인 크리에이터 육성 프로젝트 추진",
       ],
     },
@@ -106,26 +108,41 @@ export default function HistoryPage() {
     <main className="min-h-screen bg-[#f7f8f6] text-[#111]">
       <header className="fixed left-0 top-0 z-50 w-full border-b border-black/10 bg-white/80 backdrop-blur-xl">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5">
-          <a href="/" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-3">
+          <a
+            href="/"
+            onClick={() => setMobileMenuOpen(false)}
+            className="flex items-center gap-3"
+          >
             <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#111] text-[11px] font-bold text-white">
               OUR
             </div>
             <div>
-              <p className="text-[13px] font-bold tracking-[0.24em]">OUR H.L.D.S</p>
-              <p className="text-[11px] text-black/45">One-person lifestyle startup</p>
+              <p className="text-[13px] font-bold tracking-[0.24em]">
+                OUR H.L.D.S
+              </p>
+              <p className="text-[11px] text-black/45">
+                One-person lifestyle startup
+              </p>
             </div>
           </a>
 
           <nav className="hidden items-center gap-6 text-[13px] font-medium text-black/50 xl:flex">
             {navItems.map((item) => (
-              <a key={item.name} href={item.href} className="hover:text-black">
+              <a
+                key={item.name}
+                href={item.href}
+                className="hover:text-black"
+              >
                 {item.name}
               </a>
             ))}
           </nav>
 
           <div className="flex items-center gap-3">
-            <a href="/contact" className="hidden rounded-full bg-[#111] px-5 py-2.5 text-[13px] font-semibold text-white transition hover:bg-[#12b76a] sm:inline-flex">
+            <a
+              href="/contact"
+              className="hidden rounded-full bg-[#111] px-5 py-2.5 text-[13px] font-semibold text-white transition hover:bg-[#12b76a] sm:inline-flex"
+            >
               Contact
             </a>
 
@@ -152,7 +169,12 @@ export default function HistoryPage() {
                   {item.name}
                 </a>
               ))}
-              <a href="/contact" onClick={() => setMobileMenuOpen(false)} className="mt-4 rounded-2xl bg-[#111] px-5 py-4 text-center text-[14px] font-bold text-white">
+
+              <a
+                href="/contact"
+                onClick={() => setMobileMenuOpen(false)}
+                className="mt-4 rounded-2xl bg-[#111] px-5 py-4 text-center text-[14px] font-bold text-white"
+              >
                 Contact
               </a>
             </nav>
@@ -176,8 +198,9 @@ export default function HistoryPage() {
           </h1>
 
           <p className="mt-7 max-w-2xl text-[16px] leading-8 text-black/55">
-            OUR H.L.D.S는 HOLO 프로젝트에서 시작해 커뮤니티, 커머스, 콘텐츠,
-            온라인 광고 플랫폼으로 확장하며 1인 가구 라이프스타일 생태계를 만들어가고 있습니다.
+            OUR H.L.D.S는 HOLO 프로젝트에서 시작해 커뮤니티, 커머스,
+            콘텐츠, 온라인 광고 플랫폼으로 확장하며 1인 가구 라이프스타일
+            생태계를 만들어가고 있습니다.
           </p>
         </div>
       </section>
@@ -185,9 +208,16 @@ export default function HistoryPage() {
       <section className="px-5 pb-20">
         <div className="mx-auto grid max-w-7xl gap-4 md:grid-cols-3 xl:grid-cols-6">
           {highlights.map(([year, text]) => (
-            <div key={year} className="rounded-[28px] border border-black/10 bg-white p-6 shadow-sm">
-              <p className="text-[26px] font-bold tracking-[-0.05em] text-[#099250]">{year}</p>
-              <p className="mt-4 text-[14px] font-semibold leading-6 text-black/60">{text}</p>
+            <div
+              key={year}
+              className="rounded-[28px] border border-black/10 bg-white p-6 shadow-sm"
+            >
+              <p className="text-[26px] font-bold tracking-[-0.05em] text-[#099250]">
+                {year}
+              </p>
+              <p className="mt-4 text-[14px] font-semibold leading-6 text-black/60">
+                {text}
+              </p>
             </div>
           ))}
         </div>
@@ -259,13 +289,29 @@ export default function HistoryPage() {
           <div className="grid gap-4 sm:grid-cols-2">
             {[
               ["Build", "프로토타입을 만들고 실제 시장에서 검증합니다."],
-              ["Pivot", "프로젝트 종료와 전환을 통해 더 나은 구조로 재설계합니다."],
-              ["Launch", "커뮤니티·커머스·콘텐츠 서비스를 직접 운영합니다."],
-              ["Scale", "OUR SIGNAL을 통해 온라인 광고 플랫폼으로 확장합니다."],
+              [
+                "Pivot",
+                "프로젝트 종료와 전환을 통해 더 나은 구조로 재설계합니다.",
+              ],
+              [
+                "Launch",
+                "커뮤니티·커머스·콘텐츠 서비스를 직접 운영합니다.",
+              ],
+              [
+                "Scale",
+                "OUR SIGNAL을 통해 온라인 광고 플랫폼으로 확장합니다.",
+              ],
             ].map(([title, desc]) => (
-              <div key={title} className="rounded-[26px] border border-white/10 bg-white/[0.05] p-6">
-                <p className="text-[20px] font-bold tracking-[-0.04em]">{title}</p>
-                <p className="mt-4 text-[14px] leading-7 text-white/50">{desc}</p>
+              <div
+                key={title}
+                className="rounded-[26px] border border-white/10 bg-white/[0.05] p-6"
+              >
+                <p className="text-[20px] font-bold tracking-[-0.04em]">
+                  {title}
+                </p>
+                <p className="mt-4 text-[14px] leading-7 text-white/50">
+                  {desc}
+                </p>
               </div>
             ))}
           </div>
@@ -276,8 +322,12 @@ export default function HistoryPage() {
         <div className="mx-auto max-w-7xl rounded-[32px] border border-black/10 bg-[#f7f8f6] p-7 md:p-10">
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.6fr]">
             <div>
-              <p className="text-[20px] font-bold tracking-[-0.04em]">OUR H.L.D.S</p>
-              <p className="mt-1 text-[13px] text-black/45">아우어 에이치엘디에스</p>
+              <p className="text-[20px] font-bold tracking-[-0.04em]">
+                OUR H.L.D.S
+              </p>
+              <p className="mt-1 text-[13px] text-black/45">
+                아우어 에이치엘디에스
+              </p>
               <p className="mt-5 max-w-sm text-[13px] leading-6 text-black/50">
                 제품 기획 / 유통 / 판매 / 플랫폼 / 온라인 광고 & 마케팅
               </p>
@@ -285,15 +335,22 @@ export default function HistoryPage() {
 
             <div className="grid gap-5 text-[12px] leading-6 text-black/50 md:grid-cols-2">
               <div>
-                <p className="mb-3 text-[13px] font-bold text-black/80">Company</p>
+                <p className="mb-3 text-[13px] font-bold text-black/80">
+                  Company
+                </p>
                 <p>사업자 등록 번호 : 697-36-01404</p>
                 <p>통신판매업 신고번호 : 제 2024-광주동구-0363호</p>
-                <p>사업장 소재지 : 광주광역시 동구 백서로 125번길 34-2, 5층 아이27호</p>
+                <p>
+                  사업장 소재지 : 전남광주통합특별시 동구 백서로125번길 34-2
+                  5층 아이27호
+                </p>
                 <p>물류 창고 소재지 : 계약 예정</p>
               </div>
 
               <div>
-                <p className="mb-3 text-[13px] font-bold text-black/80">Contact</p>
+                <p className="mb-3 text-[13px] font-bold text-black/80">
+                  Contact
+                </p>
                 <p>비즈니스 문의 : hologadese@naver.com</p>
                 <p>대표번호 : 0507-1350-5806</p>
                 <p>카카오채널 : @ourhlds</p>
@@ -301,15 +358,26 @@ export default function HistoryPage() {
               </div>
 
               <div className="md:col-span-2">
-                <p className="mb-3 text-[13px] font-bold text-black/80">Account</p>
-                <p>기업 계좌 1 : 카카오뱅크 3333-31-2546318 [아우어에이치엘디에스]</p>
-                <p>기업 계좌 2 : 국민은행 773901-01-613735 [아우어에이치엘디에스]</p>
+                <p className="mb-3 text-[13px] font-bold text-black/80">
+                  Account
+                </p>
+                <p>
+                  기업 계좌 1 : 카카오뱅크 3333-31-2546318
+                  [아우어에이치엘디에스]
+                </p>
+                <p>
+                  기업 계좌 2 : 국민은행 773901-01-613735
+                  [아우어에이치엘디에스]
+                </p>
               </div>
             </div>
           </div>
 
           <div className="mt-8 flex flex-col gap-2 border-t border-black/10 pt-6 text-[11px] text-black/35 md:flex-row md:items-center md:justify-between">
-            <p>Copyright © OUR H.L.D.S(아우어 에이치엘디에스) All Rights Reserved.</p>
+            <p>
+              Copyright © OUR H.L.D.S(아우어 에이치엘디에스) All Rights
+              Reserved.
+            </p>
             <p>One-person lifestyle company based in Gwangju.</p>
           </div>
         </div>
