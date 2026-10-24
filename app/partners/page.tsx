@@ -32,7 +32,7 @@ export default function PartnersPage() {
       desc: "스타트업 정회원사 네트워크",
       role: "정회원사",
       image: "/images/partners/ksf-v2.png",
-      url: "https://www.kstartupforum.org",
+      url: "https://kstartupforum.org/",
       tags: ["Startup", "Community", "Forum"],
     },
     {
@@ -182,9 +182,9 @@ export default function PartnersPage() {
           </h1>
 
           <p className="mt-7 max-w-2xl text-[16px] leading-8 text-black/55">
-            OUR H.L.D.S는 스타트업, 투자, 플랫폼, 공공 네트워크, 디자인
-            협업 파트너와 함께 1인 가구 라이프스타일 시장의 새로운 흐름을
-            만들어가고 있습니다.
+            OUR H.L.D.S는 스타트업 생태계, 비즈니스 플랫폼, 공공 지원
+            네트워크 및 전문 협업 기업과 연결되며 라이프스타일, 커머스,
+            온라인 광고·마케팅, AI 검색 분야의 성장 기반을 넓혀가고 있습니다.
           </p>
         </div>
       </section>
@@ -226,8 +226,8 @@ export default function PartnersPage() {
             </div>
 
             <p className="max-w-md text-[15px] leading-7 text-black/50">
-              각 파트너와의 연결은 사업 확장, 네트워크, 마케팅 협력,
-              스타트업 성장 기반을 강화하는 데 활용됩니다.
+              회원 활동, 서비스 이용, 지원 프로그램 참여 및 협업 등 다양한
+              형태의 연결을 통해 사업 성장 기반을 강화하고 있습니다.
             </p>
           </div>
 
@@ -255,7 +255,7 @@ export default function PartnersPage() {
 
                 <div className="p-6">
                   <p className="text-[11px] font-bold tracking-[0.22em] text-[#099250]">
-                    PARTNER
+                    PARTNER NETWORK
                   </p>
 
                   <h3 className="mt-4 text-[22px] font-bold tracking-[-0.045em]">

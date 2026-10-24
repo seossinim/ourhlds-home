@@ -25,16 +25,16 @@ export default function IRPage() {
 
   const cards = [
     ["Commerce", "1OUR 기반 1인 가구 라이프스타일 커머스"],
-    ["Community", "홀로알다 기반 익명 커뮤니티와 감정 데이터"],
+    ["Community", "홀로알다 기반 익명 커뮤니티 및 생활 서비스"],
     ["Marketing", "OUR SIGNAL 기반 온라인 광고·마케팅 플랫폼"],
-    ["Content IP", "18년 콘텐츠 경험 기반 브랜드 IP 확장"],
+    ["AI Search", "BERIDUK 4.0 차세대 AI 검색 종합 포털"],
   ];
 
   const highlights = [
-    ["01", "1인 가구 시장", "소비·콘텐츠·생활·커뮤니티·광고 흐름이 연결되는 시장 변화에 집중합니다."],
-    ["02", "브랜드 포트폴리오", "1OUR, 홀로알다, OUR SIGNAL을 하나의 생활형 플랫폼 생태계로 연결합니다."],
-    ["03", "콘텐츠 기반 실행력", "대표의 크리에이터 경험과 실제 서비스 운영 경험을 바탕으로 빠르게 실행합니다."],
-    ["04", "Pre-Series A Target", "브랜드 확장, 콘텐츠 강화, 사용자 기반 확대, 신규 서비스 준비를 위한 성장 자금을 계획합니다."],
+    ["01", "사업 포트폴리오", "커머스·커뮤니티·마케팅·AI 검색의 4개 사업 영역을 운영 및 개발합니다."],
+    ["02", "서비스 실행 경험", "서비스 기획과 개발, 콘텐츠 제작 및 실제 운영 경험을 바탕으로 사업을 추진합니다."],
+    ["03", "기술 기반 확장", "BERIDUK 4.0 출시를 통해 AI 검색 분야로 사업 영역을 확장했습니다."],
+    ["04", "성장 전략", "기존 서비스 고도화와 신규 기술 사업 확장을 위한 단계적 성장 전략을 추진합니다."],
   ];
 
   const downloadItems = [
@@ -158,9 +158,9 @@ export default function IRPage() {
             </h1>
 
             <p className="mt-7 max-w-2xl text-[16px] leading-8 text-black/55">
-              콘텐츠, 커뮤니티, 커머스, 온라인 광고를 연결하는 1인 가구
-              라이프스타일 스타트업 OUR H.L.D.S의 성장 전략과 생태계 구조를
-              확인하실 수 있습니다.
+              OUR H.L.D.S는 라이프스타일 커머스, 익명 커뮤니티, 온라인 광고·마케팅,
+              차세대 AI 검색 종합 포털을 중심으로 사업 영역을 확장하고 있습니다.
+              기존 사업 운영 경험과 새로운 기술 기반 서비스를 연결하는 성장 전략을 소개합니다.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -210,8 +210,9 @@ export default function IRPage() {
             </h2>
 
             <p className="mt-6 text-[15px] leading-8 text-black/55">
-              IR 자료에는 OUR H.L.D.S의 브랜드 구조, 시장 접근 방식, 수익
+              기존 공개 IR 자료에는 OUR H.L.D.S의 브랜드 구조, 시장 접근 방식, 수익
               모델, 플랫폼 확장 전략, Pre-Series A 투자 계획이 포함되어 있습니다.
+              현재 사업 현황에는 BERIDUK 4.0 출시 이후의 확장 내용이 반영되어 있습니다.
             </p>
 
             <div className="mt-8 grid gap-3">
@@ -322,9 +323,9 @@ export default function IRPage() {
               </p>
 
               <h2 className="mt-4 text-[34px] font-bold leading-tight tracking-[-0.055em] md:text-[52px]">
-                1인 가구 시장에서
+                실행 경험을 바탕으로,
                 <br />
-                실행 가능한 플랫폼으로
+                새로운 기술과 시장으로
                 <br />
                 확장합니다.
               </h2>
@@ -366,8 +367,8 @@ export default function IRPage() {
               </h2>
               <p className="mt-6 text-[15px] leading-8 text-black/55">
                 플랫폼 고도화, 브랜드 확장, 콘텐츠 강화, 사용자 기반 확대,
-                운영 안정화, 신규 서비스 준비를 위한 성장 자금으로 활용될
-                계획입니다.
+                운영 안정화 및 AI 검색 서비스의 기술 고도화를 위한 성장 자금으로
+                활용될 계획입니다.
               </p>
             </div>
             <div className="rounded-[30px] border border-[#12b76a]/20 bg-[#f1fbf5] p-7">

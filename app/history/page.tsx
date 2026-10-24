@@ -21,14 +21,15 @@ export default function HistoryPage() {
     ["2023", "홀로알다 공식 런칭"],
     ["2024", "OUR H.L.D.S 설립"],
     ["2025", "1OUR·OUR SIGNAL 확장"],
-    ["2026", "AI 서비스·광고 플랫폼·대외 활동 확장"],
+    ["2026", "BERIDUK 4.0 정식 출시 · AI 검색 사업 진출"],
   ];
 
   const timeline = [
     {
       year: "2026",
-      title: "AI 서비스와 온라인 광고 플랫폼으로 확장",
+      title: "AI 서비스 고도화와 차세대 검색 사업 진출",
       items: [
+        "BERIDUK 4.0 차세대 AI 검색 종합 포털 정식 출시",
         "코리아스타트업포럼 10주년 제주 행사 참여",
         "홀로알다 AI 캐릭터 ‘으니·예니’ STT·TTS 음성 서비스 베타 공개",
         "OUR SIGNAL 온라인 광고 플랫폼 전환 개발 프로젝트 진행",
@@ -199,8 +200,8 @@ export default function HistoryPage() {
 
           <p className="mt-7 max-w-2xl text-[16px] leading-8 text-black/55">
             OUR H.L.D.S는 HOLO 프로젝트에서 시작해 커뮤니티, 커머스,
-            콘텐츠, 온라인 광고 플랫폼으로 확장하며 1인 가구 라이프스타일
-            생태계를 만들어가고 있습니다.
+            콘텐츠, 온라인 광고·마케팅 플랫폼을 거쳐 차세대 AI 검색 종합 포털까지
+            사업 영역을 확장해 왔습니다.
           </p>
         </div>
       </section>
@@ -295,11 +296,11 @@ export default function HistoryPage() {
               ],
               [
                 "Launch",
-                "커뮤니티·커머스·콘텐츠 서비스를 직접 운영합니다.",
+                "커뮤니티·커머스·콘텐츠·AI 검색 서비스를 직접 개발하고 운영합니다.",
               ],
               [
                 "Scale",
-                "OUR SIGNAL을 통해 온라인 광고 플랫폼으로 확장합니다.",
+                "온라인 광고·마케팅과 차세대 AI 검색 분야로 사업 영역을 확장합니다.",
               ],
             ].map(([title, desc]) => (
               <div

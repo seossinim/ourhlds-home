@@ -21,6 +21,7 @@ export default function CEOPage() {
     ["SOOP", "1세대 최연소 베스트 스트리머"],
     ["Media", "연예Wa닷컴 창업자 및 발행인·편집인"],
     ["Startup", "홀로(Holo) 개발·출시·운영"],
+    ["BERIDUK", "차세대 AI 검색 종합 포털 개발·출시"],
   ];
 
   const awards = [
@@ -122,12 +123,12 @@ export default function CEOPage() {
               <br />
               연결해온 경험으로
               <br />
-              1인 가구의 내일을 만듭니다.
+              새로운 디지털 세상을 만들어갑니다.
             </h1>
 
             <p className="mt-7 max-w-2xl text-[16px] leading-8 text-black/55">
-              OUR H.L.D.S는 콘텐츠, 커뮤니티, 커머스, 플랫폼을 연결하며
-              1인 가구 라이프스타일의 새로운 흐름을 만들어가고 있습니다.
+              OUR H.L.D.S는 콘텐츠, 커뮤니티, 커머스, 플랫폼과 AI 검색 기술을 연결하며
+              사람과 정보, 브랜드를 잇는 새로운 디지털 경험을 만들어가고 있습니다.
             </p>
 
             <div className="mt-9 flex flex-wrap gap-3">
@@ -192,9 +193,9 @@ export default function CEOPage() {
 
             <p className="mt-6 text-[17px] leading-9 text-black/65">
               콘텐츠를 통해 사람의 감정과 생활 흐름을 관찰해온 경험을 바탕으로,
-              현재는 1OUR, 홀로알다, OUR SIGNAL을 중심으로 커머스·커뮤니티·
-              온라인 광고 플랫폼을 연결하는 브랜드형 스타트업을 운영하고
-              있습니다.
+              현재는 1OUR, 홀로알다, OUR SIGNAL, BERIDUK을 중심으로
+              커머스·커뮤니티·온라인 광고·마케팅·AI 검색 사업을 직접 기획하고
+              운영하고 있습니다.
             </p>
 
             <div className="mt-10 grid gap-4 sm:grid-cols-2">
@@ -285,6 +286,7 @@ export default function CEOPage() {
               ["Community", "1인 가구가 서로 연결되는 커뮤니티"],
               ["Commerce", "혼자 사는 생활에 필요한 제품 제안"],
               ["Platform", "광고와 마케팅을 쉽게 연결하는 실행 시스템"],
+              ["AI & Search", "누구나 필요한 정보를 더 쉽고 편리하게 발견할 수 있는 검색 경험"],
             ].map(([title, desc]) => (
               <div
                 key={title}

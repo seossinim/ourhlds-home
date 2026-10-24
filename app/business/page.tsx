@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function BusinessPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeImages, setActiveImages] = useState([0, 0, 0]);
+  const [activeImages, setActiveImages] = useState([0, 0, 0, 0]);
 
   const navItems = [
     { name: "Business", href: "/business" },
@@ -74,6 +74,24 @@ export default function BusinessPage() {
         "/images/oursignal/4.png",
       ],
     },
+    {
+      name: "BERIDUK",
+      type: "AI Search Portal",
+      title: "검색을 넘어, 새로운 발견으로 연결하는 AI 검색 종합 포털",
+      desc: "BERIDUK(베리덕)은 AI 검색과 통합검색을 기반으로 뉴스, 인기 검색어, 경제, 생활, 스포츠 등 다양한 정보를 한곳에서 탐색할 수 있는 차세대 AI 검색 종합 포털입니다. 이용자의 호기심이 새로운 발견으로 이어지는 검색 경험을 제공합니다.",
+      points: [
+        "AI 검색 및 통합검색",
+        "뉴스·인기 검색어",
+        "경제·생활·스포츠 정보",
+        "정보 탐색과 새로운 발견",
+      ],
+      images: [
+        "/images/beriduk/1.png",
+        "/images/beriduk/2.png",
+        "/images/beriduk/3.png",
+        "/images/beriduk/4.png",
+      ],
+    },
   ];
 
   const videos = [
@@ -91,6 +109,11 @@ export default function BusinessPage() {
       brand: "OUR SIGNAL",
       title: "OUR SIGNAL 홍보 CF형 영상",
       videoId: "vfG7zJq-hpU",
+    },
+    {
+      brand: "BERIDUK",
+      title: "BERIDUK 공식 CF형 홍보영상 (30초)",
+      videoId: "hEdMAc5fWPk",
     },
   ];
 
@@ -186,14 +209,14 @@ export default function BusinessPage() {
           </p>
 
           <h1 className="mt-6 max-w-4xl text-[40px] font-bold leading-[1.12] tracking-[-0.055em] md:text-[68px]">
-            1인 가구의 삶에서
+            사람과 정보를 연결하며
             <br />
-            비즈니스의 기회를 찾습니다.
+            새로운 가능성을 만듭니다.
           </h1>
 
           <p className="mt-7 max-w-2xl text-[16px] leading-8 text-black/55">
-            OUR H.L.D.S는 제품 기획, 유통, 판매, 커뮤니티, 플랫폼, 온라인
-            광고를 하나의 흐름으로 연결합니다.
+            OUR H.L.D.S는 라이프스타일 커머스, 커뮤니티, 온라인 광고·마케팅부터
+            차세대 AI 검색 종합 포털까지 다양한 디지털 비즈니스를 전개합니다.
           </p>
         </div>
       </section>
@@ -295,15 +318,15 @@ export default function BusinessPage() {
               <h2 className="mt-4 text-[34px] font-bold leading-tight tracking-[-0.055em] md:text-[54px]">
                 브랜드를 보여주는
                 <br />
-                세 개의 짧은 장면.
+                네 개의 짧은 장면.
               </h2>
             </div>
             <p className="max-w-md text-[15px] leading-7 text-black/50">
-              1OUR, 홀로알다, OUR SIGNAL의 방향성을 영상으로 보여줍니다.
+              1OUR, 홀로알다, OUR SIGNAL, BERIDUK의 방향성을 영상으로 보여줍니다.
             </p>
           </div>
 
-          <div className="grid gap-6 lg:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2">
             {videos.map((video) => (
               <article
                 key={video.videoId}
@@ -352,6 +375,7 @@ export default function BusinessPage() {
               ],
               ["Content IP", "대표 IP와 브랜드 콘텐츠 제작"],
               ["Marketing Platform", "소상공인·초기 브랜드 광고 플랫폼"],
+              ["AI Search & Technology", "차세대 AI 검색 종합 포털 BERIDUK 운영"],
             ].map(([title, desc]) => (
               <div
                 key={title}

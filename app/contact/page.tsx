@@ -16,22 +16,10 @@ export default function ContactPage() {
   ];
 
   const contactTypes = [
-    [
-      "Business Partnership",
-      "브랜드 협업 및 제휴 관련 문의",
-    ],
-    [
-      "Marketing Inquiry",
-      "온라인 광고 및 마케팅 관련 문의",
-    ],
-    [
-      "Commerce & Product",
-      "커머스 입점 및 상품 협업 문의",
-    ],
-    [
-      "Lecture / Interview / PR",
-      "강연, 인터뷰, 언론 및 PR 관련 문의",
-    ],
+    ["Business Partnership", "사업 제휴 및 브랜드·플랫폼 협력 문의"],
+    ["Marketing & Commerce", "온라인 광고·마케팅, 커머스 입점 및 상품 협업 문의"],
+    ["AI & Technology", "AI 검색, 기술 협력 및 플랫폼 관련 사업 제안"],
+    ["Media & PR", "강연, 인터뷰, 언론 보도 및 홍보 관련 문의"],
   ];
 
   return (
@@ -129,8 +117,8 @@ export default function ContactPage() {
           </h1>
 
           <p className="mt-7 max-w-2xl text-[16px] leading-8 text-black/55">
-            비즈니스 제휴, 광고·마케팅, 커머스 협업, 강연 및 인터뷰 등
-            다양한 문의를 받고 있습니다.
+            비즈니스 제휴, 온라인 광고·마케팅, 커머스 협업, AI 검색 및 플랫폼 기술 협력,
+            강연·언론 인터뷰 등 다양한 제안과 문의를 기다립니다.
           </p>
         </div>
       </section>
@@ -199,9 +187,12 @@ export default function ContactPage() {
                   PHONE
                 </p>
 
-                <p className="mt-4 text-[22px] font-bold tracking-[-0.045em]">
+                <a
+                  href="tel:050713505806"
+                  className="mt-4 block text-[22px] font-bold tracking-[-0.045em] transition hover:text-[#12b76a]"
+                >
                   0507-1350-5806
-                </p>
+                </a>
               </div>
 
               <div className="rounded-[32px] border border-black/10 bg-[#f7f8f6] p-7">

@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from "react";
@@ -19,6 +20,30 @@ export default function Home() {
     ["1OUR", "1인 가구 라이프스타일 커머스"],
     ["홀로알다", "1인 가구 익명 커뮤니티"],
     ["OUR SIGNAL", "온라인 광고 & 마케팅 플랫폼"],
+    ["BERIDUK", "차세대 AI 검색 종합 포털"],
+  ];
+
+  const businessAreas = [
+    {
+      title: "제품 기획",
+      desc: "라이프스타일에 필요한 제품과 서비스를 기획합니다.",
+    },
+    {
+      title: "유통 / 판매",
+      desc: "다양한 상품을 발굴하고 소비자와 연결합니다.",
+    },
+    {
+      title: "플랫폼",
+      desc: "커뮤니티와 디지털 서비스를 통해 새로운 경험을 제공합니다.",
+    },
+    {
+      title: "온라인 광고 & 마케팅",
+      desc: "브랜드와 소비자를 연결하는 마케팅 서비스를 제공합니다.",
+    },
+    {
+      title: "AI 검색 & 기술",
+      desc: "차세대 AI 검색 기술을 통해 정보 탐색의 새로운 가능성을 확장합니다.",
+    },
   ];
 
   return (
@@ -45,7 +70,11 @@ export default function Home() {
 
           <nav className="hidden items-center gap-6 text-[13px] font-medium text-black/50 xl:flex">
             {navItems.map((item) => (
-              <a key={item.name} href={item.href} className="hover:text-black">
+              <a
+                key={item.name}
+                href={item.href}
+                className="hover:text-black"
+              >
                 {item.name}
               </a>
             ))}
@@ -114,8 +143,10 @@ export default function Home() {
             </h1>
 
             <p className="mt-7 max-w-xl text-[16px] leading-8 text-black/55">
-              OUR H.L.D.S는 제품 기획, 유통, 판매, 플랫폼, 온라인 광고와
-              마케팅을 연결하며 1인 가구의 생활 방식을 새롭게 제안합니다.
+              OUR H.L.D.S는 라이프스타일 커머스, 커뮤니티,
+              온라인 광고·마케팅, AI 검색 기술을 기반으로
+              사람과 정보, 브랜드를 연결하는 다양한
+              디지털 서비스를 만들어갑니다.
             </p>
 
             <div className="mt-9 flex flex-wrap gap-3">
@@ -151,7 +182,9 @@ export default function Home() {
                       <h3 className="text-[28px] font-bold tracking-[-0.05em]">
                         {name}
                       </h3>
-                      <p className="mt-2 text-[14px] text-white/55">{desc}</p>
+                      <p className="mt-2 text-[14px] text-white/55">
+                        {desc}
+                      </p>
                     </a>
                   ))}
                 </div>
@@ -163,7 +196,7 @@ export default function Home() {
                 BUSINESS AREA
               </p>
               <p className="mt-1 text-[14px] font-semibold">
-                기획 · 유통 · 플랫폼 · 광고
+                기획 · 유통 · 플랫폼 · 광고 · AI 검색
               </p>
             </div>
           </div>
@@ -171,24 +204,23 @@ export default function Home() {
       </section>
 
       <section className="px-5 py-20">
-        <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-4">
-          {["제품 기획", "유통 / 판매", "플랫폼", "온라인 광고 & 마케팅"].map(
-            (item) => (
-              <div
-                key={item}
-                className="rounded-[28px] border border-black/10 bg-white p-6 shadow-sm transition hover:-translate-y-1"
-              >
-                <div className="mb-5 h-2 w-10 rounded-full bg-[#12b76a]" />
-                <p className="text-[20px] font-bold tracking-[-0.04em]">
-                  {item}
-                </p>
-                <p className="mt-4 text-[14px] leading-7 text-black/50">
-                  1인 가구의 생활과 브랜드 성장을 연결하는 실행 중심
-                  비즈니스를 만듭니다.
-                </p>
-              </div>
-            )
-          )}
+        <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+          {businessAreas.map((item) => (
+            <div
+              key={item.title}
+              className="rounded-[28px] border border-black/10 bg-white p-6 shadow-sm transition hover:-translate-y-1"
+            >
+              <div className="mb-5 h-2 w-10 rounded-full bg-[#12b76a]" />
+
+              <p className="text-[20px] font-bold tracking-[-0.04em]">
+                {item.title}
+              </p>
+
+              <p className="mt-4 text-[14px] leading-7 text-black/50">
+                {item.desc}
+              </p>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -214,9 +246,11 @@ export default function Home() {
               <p className="text-[12px] font-bold tracking-[0.2em] text-[#099250]">
                 FEATURED VIDEO
               </p>
+
               <p className="mt-3 text-[18px] font-bold tracking-[-0.04em] text-black">
                 Viva Republica · Toss
               </p>
+
               <p className="mt-2 text-[14px] leading-6 text-black/50">
                 토스 이승건 대표와의 만남 및 스타트업 관련 이야기.
               </p>
@@ -242,9 +276,11 @@ export default function Home() {
               <p className="text-[20px] font-bold tracking-[-0.04em]">
                 OUR H.L.D.S
               </p>
+
               <p className="mt-1 text-[13px] text-black/45">
                 아우어 에이치엘디에스
               </p>
+
               <p className="mt-5 max-w-sm text-[13px] leading-6 text-black/50">
                 제품 기획 / 유통 / 판매 / 플랫폼 / 온라인 광고 & 마케팅
               </p>
@@ -255,12 +291,15 @@ export default function Home() {
                 <p className="mb-3 text-[13px] font-bold text-black/80">
                   Company
                 </p>
+
                 <p>사업자 등록 번호 : 697-36-01404</p>
                 <p>통신판매업 신고번호 : 제 2024-광주동구-0363호</p>
+
                 <p>
-                  사업장 소재지 : 전남광주통합특별시 동구 백서로125번길 34-2 5층 
+                  사업장 소재지 : 전남광주통합특별시 동구 백서로125번길 34-2 5층
                   아이27호
                 </p>
+
                 <p>물류 창고 소재지 : 계약 예정</p>
               </div>
 
@@ -268,6 +307,7 @@ export default function Home() {
                 <p className="mb-3 text-[13px] font-bold text-black/80">
                   Contact
                 </p>
+
                 <p>비즈니스 문의 : hologadese@naver.com</p>
                 <p>대표번호 : 0507-1350-5806</p>
                 <p>카카오채널 : @ourhlds</p>
@@ -278,10 +318,12 @@ export default function Home() {
                 <p className="mb-3 text-[13px] font-bold text-black/80">
                   Account
                 </p>
+
                 <p>
                   기업 계좌 1 : 카카오뱅크 3333-31-2546318
                   [아우어에이치엘디에스]
                 </p>
+
                 <p>
                   기업 계좌 2 : 국민은행 773901-01-613735
                   [아우어에이치엘디에스]

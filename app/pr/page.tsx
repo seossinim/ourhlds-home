@@ -20,6 +20,17 @@ export default function PRPage() {
 
   const featured = [
     {
+      category: "AI SEARCH PORTAL",
+      date: "2026.10",
+      title: "BERIDUK 4.0 차세대 AI 검색 종합 포털 정식 출시",
+      desc: "OUR H.L.D.S가 AI 검색과 다양한 정보 탐색 경험을 제공하는 차세대 AI 검색 종합 포털 BERIDUK 4.0을 출시하고, 이용자 의견을 반영한 단계적 서비스 고도화에 나섭니다.",
+      links: [
+        ["한국목재신문", "https://www.woodkorea.co.kr/news/articleView.html?idxno=91993"],
+        ["하이뉴스", "https://www.hinews.co.kr/view.php?ud=202610211223446219284fa285d_48"],
+        ["공식 홈페이지", "https://www.beriduk.com"],
+      ],
+    },
+    {
       category: "STARTUP",
       date: "2026.09",
       title: "코리아스타트업포럼 10주년 제주 행사 참여",
@@ -90,25 +101,26 @@ export default function PRPage() {
         ],
       ],
     },
-    {
-      category: "LECTURE",
-      date: "2024.10",
-      title: "GIF 2024 글로벌 이노베이터 페스타 초청 강연",
-      desc: "OUR H.L.D.S 서은호 대표가 스타트업 강연 연사로 초청되어 1인 가구 플랫폼과 창업 경험을 공유했습니다.",
-      links: [
-        [
-          "피앤피뉴스",
-          "https://www.gosiweek.com/article/1065602517139893",
-        ],
-        [
-          "경상일보",
-          "https://www.ksilbo.co.kr/news/articleView.html?idxno=1012142",
-        ],
-      ],
-    },
+
   ];
 
   const pressList = [
+    {
+      category: "AI SEARCH PORTAL",
+      date: "2026.10",
+      title: "베리덕 차세대 AI 검색 종합 포털 정식 출시",
+      desc: "아우어에이치엘디에스의 신규 AI 검색 종합 포털 베리덕 4.0 출시 소식을 다룬 언론 보도입니다.",
+      media: "한국목재신문",
+      url: "https://www.woodkorea.co.kr/news/articleView.html?idxno=91993",
+    },
+    {
+      category: "AI SEARCH PORTAL",
+      date: "2026.10",
+      title: "아우어에이치엘디에스, AI 검색 '베리덕 4.0' 출시...MVP로 시작해 단계적 고도화",
+      desc: "베리덕 4.0 출시와 MVP 기반 운영, 이용자 의견을 반영한 검색 경험의 단계적 개선 방향을 소개했습니다.",
+      media: "하이뉴스",
+      url: "https://www.hinews.co.kr/view.php?ud=202610211223446219284fa285d_48",
+    },
     {
       category: "STARTUP",
       date: "2026.09",
@@ -342,8 +354,8 @@ export default function PRPage() {
           </h1>
 
           <p className="mt-7 max-w-2xl text-[16px] leading-8 text-black/55">
-            언론 보도, 강연, 브랜드 런칭, 콘텐츠 활동을 통해 1인 가구
-            라이프스타일 스타트업으로서의 흐름을 만들어가고 있습니다.
+            언론 보도, 강연, 브랜드 출시, 콘텐츠 활동을 통해 라이프스타일 플랫폼부터
+            차세대 AI 검색 종합 포털까지 OUR H.L.D.S의 도전과 성장 과정을 전합니다.
           </p>
         </div>
       </section>
@@ -521,7 +533,7 @@ export default function PRPage() {
               ["Lecture", "강연과 행사 참여로 스타트업 경험을 공유합니다."],
               [
                 "Brand",
-                "1OUR, 홀로알다, OUR SIGNAL의 브랜드 가치를 확장합니다.",
+                "라이프스타일과 AI 검색을 아우르는 브랜드 가치를 확장합니다.",
               ],
               [
                 "Content",

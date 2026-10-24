@@ -19,14 +19,14 @@ export default function CIPage() {
   const keywords = [
     ["Trend", "트렌드에 빠르게 반응하는 브랜드"],
     ["Change", "생활의 변화를 관찰하는 기업"],
-    ["Innovation", "1인 가구 시장을 새롭게 해석하는 스타트업"],
+    ["Innovation", "생활과 기술의 가능성을 새롭게 해석하는 기업"],
   ];
 
   const principles = [
     ["Minimal", "불필요한 장식을 덜어낸 미니멀한 인상"],
     ["Black & White", "블랙과 화이트를 중심으로 한 명확한 대비"],
-    ["Flexible", "웹·모바일·콘텐츠·커머스에 확장 가능한 구조"],
-    ["Young Startup", "2030 세대와 1인 가구 시장을 향한 젊은 감각"],
+    ["Flexible", "웹·모바일·콘텐츠·커머스·AI 서비스에 확장 가능한 구조"],
+    ["Young Startup", "변화하는 시장과 새로운 기술에 열린 젊은 감각"],
   ];
 
   return (
@@ -120,8 +120,9 @@ export default function CIPage() {
             </h1>
 
             <p className="mt-7 max-w-2xl text-[16px] leading-8 text-black/55">
-              OUR H.L.D.S의 CI는 1인 가구 청년들이 함께 모여 OUR, 우리가
-              되는 브랜드의 방향성을 담고 있습니다.
+              OUR H.L.D.S의 CI는 개인의 경험과 가능성이 모여 OUR, 우리가
+              되는 가치를 담고 있습니다. 사람과 기술, 일상과 서비스를 연결하며
+              함께 성장하는 기업의 방향성을 표현합니다.
             </p>
           </div>
 
@@ -130,7 +131,7 @@ export default function CIPage() {
               BRAND CORE
             </p>
             <div className="mt-7 grid gap-3">
-              {["2030", "MZ Youth", "One-person Household", "Lifestyle Platform"].map(
+              {["People", "Lifestyle", "Technology", "Connection"].map(
                 (item) => (
                   <div
                     key={item}
@@ -174,16 +175,16 @@ export default function CIPage() {
           </p>
 
           <h2 className="mt-5 text-[30px] font-bold leading-[1.55] tracking-[-0.05em] md:text-[46px]">
-            대한민국 2030
+            사람을 이해하고,
             <br />
-            MZ 청년세대
+            기술로 연결하며,
             <br />
-            1인 가구 대표 기업
+            새로운 가능성을 만듭니다.
           </h2>
 
           <p className="mx-auto mt-7 max-w-2xl text-[15px] leading-8 text-black/50">
-            브랜드의 정체성은 단순한 로고가 아니라, 1인 가구의 생활 방식과
-            청년 세대의 변화에 반응하는 OUR H.L.D.S의 태도를 보여줍니다.
+            브랜드의 정체성은 단순한 로고를 넘어 사람의 일상과 기술의 변화에
+            주목하고, 새로운 가능성을 연결하는 OUR H.L.D.S의 태도를 보여줍니다.
           </p>
         </div>
       </section>
