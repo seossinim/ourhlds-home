@@ -567,7 +567,7 @@ export default function PRPage() {
                 아우어 에이치엘디에스
               </p>
               <p className="mt-5 max-w-sm text-[13px] leading-6 text-black/50">
-                제품 기획 / 유통 / 판매 / 플랫폼 / 온라인 광고 & 마케팅
+                제품 기획 / 유통 / 판매 / 플랫폼 / 온라인 광고 & 마케팅 / AI 검색 & 기술
               </p>
             </div>
 
